@@ -2,16 +2,16 @@
 Simple implementation of a recycler view to expose all the components necessary in a straight forward manner and facilitate learning/recall. 
 
 #Step 1: Gradle dependency
-* add to Gradle app file: `compile 'com.android.support:recyclerview-v7:25.0.1`
+* add to Gradle app file: `compile 'com.android.support:recyclerview-v7:25.0.1'`
 * replace the version with something that fits your app
 
-#Step 2: Create MainActiviy.java 
+#Step 2: Create MainActivity.java
 * add global references
   * RecyclerView (import it)
   * RecyclerAdapter (you'll write this class later)
   * LinearLayoutManger (import it)
   * Data (list of whatever you're trying to display, this project uses a simple array)
-* in `MainActiviy.onCreate()`
+* in `MainActivity.onCreate()`
   * set recyclerView reference to an id (you'll add this recycler view to xml later)
   * set RecyclerAdapter reference to a new RecyclerAdapter whose constructor takes in the data array
   * set linearLayoutManger to new LinearLayoutManager
