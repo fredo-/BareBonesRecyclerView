@@ -12,7 +12,7 @@ Simple implementation of a recycler view to expose all the components necessary 
   * LinearLayoutManger (import it)
   * Data (list of whatever you're trying to display, this project uses a simple array)
 * in `MainActivity.onCreate()`
-  * set recyclerView reference to an id (you'll add this recycler view to xml later)
+  * set recyclerView reference to a view with `findViewById(R.id.list)` (you'll add the recycler view with id `list` to xml later)
   * set RecyclerAdapter reference to a new RecyclerAdapter whose constructor takes in the data array
   * set linearLayoutManger to new LinearLayoutManager
   * set recyclerView adapter
