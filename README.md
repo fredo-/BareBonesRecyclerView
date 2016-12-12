@@ -1,7 +1,6 @@
 # BareBonesRecyclerView
 Simple implementation of a recycler view to expose all the components necessary in a straight forward manner and facilitate learning/recall.
-Below you will find the instructions to set up a basic recycler view to display a list of simple data (ints or strings or anything really).
-There are 3 commits matching the 3 steps outlined below. You can see the changes highlighted in the list of commits by clicking on each commit.
+Each instruction below has a matching commit to show a simple implementation of the instructions.
 
 #Step 1: Gradle dependency
 * add to Gradle app file: `compile 'com.android.support:recyclerview-v7:25.0.1'`
