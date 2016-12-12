@@ -27,6 +27,7 @@ There are 3 commits matching the 3 steps outlined below. You can see the changes
   * implement methods
   * write constructor and set data to the constructor's input
   * update `getItemCount()` to return size of data array
+  * in `onBindViewHolder()` set the fields of the holder with `holder.bindData(position)` (you'll write this method in the holder below)
   * in `onCreateViewHolder()` inflate the item layout with an xml id that will be defined later and pass to CustomHolder's constructor to return it
 ```java
 @Override
@@ -36,7 +37,6 @@ public CustomHolder onCreateViewHolder(ViewGroup parent, int viewType) {
    return new CustomHolder(inflatedView);
 }
 ```
-* in `onBindViewHolder()` set the fields of the holder based on the data and the position
 * write `CustomHolder` class inside the adapter class (extends RecyclerView.ViewHolder implements OnClickListener)
     * implement methods
     * write refs to what you want to display in each row of recycler view (defined in the xml file for the layout of each row, which we'll write later)
