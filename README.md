@@ -28,14 +28,14 @@ There are 3 commits matching the 3 steps outlined below. You can see the changes
   * write constructor and set data to the constructor's input
   * update `getItemCount()` to return size of data array
   * in `onCreateViewHolder()` inflate the item layout with an xml id that will be defined later and pass to CustomHolder's constructor to return it
-```java
-@Override
-public CustomHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-   View inflatedView = LayoutInflater.from(parent.getContext())
-           .inflate(R.layout.item_layout, parent, false);
-   return new CustomHolder(inflatedView);
-}
-```
+        ```java
+        @Override
+        public CustomHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+           View inflatedView = LayoutInflater.from(parent.getContext())
+                   .inflate(R.layout.item_layout, parent, false);
+           return new CustomHolder(inflatedView);
+        }
+        ```
   * in `onBindViewHolder()` set the fields of the holder based on the data and the position
   * write `CustomHolder` class inside the adapter class (extends RecyclerView.ViewHolder implements OnClickListener)
     * implement methods
